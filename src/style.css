@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.app-container {
+    background-color: #311b3b;
+}
+
+.add-main {
+    display: flex;
+    justify-content: center;
+}
+
+.add-inputs {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.add-button {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button-inner {
+    width: 70%;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #354fe1;
+    border-radius: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-button-inner:hover {
+    box-shadow: 3px 3px #354fe1;
+    margin-right: 3px;
+}
+
+.input-inner {
+    justify-content: space-between;
+    display: flex;
+    column-gap: 30px;
+    margin: 15px 0 15px 0;
+    width: 500px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.input {
+    width: 250px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.right {
+    text-align: right;
+
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+}
+
+.details-inner {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 400px;
+}
+
+.detail-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.detail-job {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+
+.list-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+
+}
+
+.list-inside {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    width: 50%;
+}
+
+.list-left {
+    justify-content: flex-start;
+}
+
+.list-right {
+    justify-content: flex-end;
+}
+
+.list-item {
+    margin: 0 5px 0 5px;
+    color: #fff;
+
+}
+
+.icon {
+    cursor: pointer;
+}
+
+
+
+.links,
+a:-webkit-any-link {
+    border: 1px solid #354fe1;
+    border-radius: 40px;
+    padding: 2px 15px 2px 15px;
+    text-align: start;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.links:hover,
+a:-webkit-any-link:hover {
+    box-shadow: 3px 3px #354fe1;
+    margin-right: 3px;
+}
+
+/* Buttons */
+
+.back-button {
+    background-color: transparent;
+    border: 0;
+    color: #354fe1;
+    font-weight: bold;
+    cursor: pointer;
+
+}
