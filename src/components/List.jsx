@@ -47,16 +47,21 @@ const List = () => {
         navigate(`details/${id}`)
     }
 
+    const editHandler = (id) => {
+        navigate(`edit/${id}`)
+    }
+
     console.log(simpsons && simpsons)
 
     return (
         <div>
             {simpsons?.map((simpson, index) =>
                 <Row className='list-main' key={index}  >
-                    <Col xl="6" className='list-inside list-left' onClick={() => detailHandler(simpson.id)}>
-                        <Col className='list-item'> {index + 1} </Col>
-                        <Col className='list-item'> <img src={simpson.avatar?.split("revision")[0]} width="50" /> </Col>
-                        <Col className='list-item'> {simpson.name} </Col>
+                    <Col xl="6" className='list-inside list-left'>
+                        <Col className='list-item' onClick={() => detailHandler(simpson.id)}> {index + 1} </Col>
+                        <Col className='list-item' onClick={() => detailHandler(simpson.id)}> <img src={simpson.avatar?.split("revision")[0]} width="50" /> </Col>
+                        <Col className='list-item' onClick={() => detailHandler(simpson.id)}> {simpson.name} </Col>
+                        <Col className='list-item' onClick={() => editHandler(simpson.id)}> ✏️ </Col>
                     </Col>
                     <Col xl="6" className='list-inside list-right'>
                         <Col className='list-item icon' onClick={() => moveUpHandler(simpson.id)} >⬆️</Col>

@@ -7,6 +7,7 @@ import Add from './components/Add';
 import Details from './components/Details';
 import Favorite from './components/Favorite';
 import Header from './components/Header';
+import Edit from './components/Edit';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<List />} />
           <Route path="/add" element={<Add />} />
           <Route path="/details/:id" element={<Details />} />
+          <Route path="/edit/:id" element={<Edit />} />
           <Route path="/favorite" element={<Favorite />} />
         </Routes>
       </DataContext>
